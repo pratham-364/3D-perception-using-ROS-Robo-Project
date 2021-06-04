@@ -11,7 +11,7 @@
 > again go in the active workspace and install rosdep
 * cd ~/catkin_ws
 * rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
-* $ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
+* $ cd ~/catkin_ws/src/3D-perception-using-ROS-Robo-Project/kuka_arm/scripts
 * $ sudo chmod +x target_spawn.py
 * $ sudo chmod +x IK_server.py
 * $ sudo chmod +x safe_spawner.sh
@@ -19,10 +19,10 @@
 * $ cd ~/catkin_ws
 * $ catkin_make
 
-* export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
+* export GAZEBO_MODEL_PATH=~/catkin_ws/src/3D-perception-using-ROS-Robo-Project/kuka_arm/models
 
 * source ~/catkin_ws/devel/setup.bash
 
-* $ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
+* $ cd ~/catkin_ws/src/3D-perception-using-ROS-Robo-Project/kuka_arm/scripts
 * $ ./safe_spawner.sh
 
