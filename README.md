@@ -1,4 +1,4 @@
-# 3D-perception-using-ROS-Robo-Project-
+# 3D-perception-using-ROS-Robo-Project
 > to check gazebo version
 * gazebo --version
 > creating an active ROS workspace
