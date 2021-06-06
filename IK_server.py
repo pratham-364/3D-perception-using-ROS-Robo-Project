@@ -40,6 +40,8 @@ def rot_z(q):
     
     return R_z
 
+> translational matrix
+  
 def trans_matrix(alpha, a, d, q):
     T = Matrix([[            cos(q),           -sin(q),           0,             a],
                 [ sin(q)*cos(alpha), cos(q)*cos(alpha), -sin(alpha), -sin(alpha)*d],
@@ -47,16 +49,22 @@ def trans_matrix(alpha, a, d, q):
                 [                 0,                 0,           0,             1]])
     return T
 
+> to convert from deg to radians
+
 def rad(deg):
     """ Convert degree to radian.
     """
     return deg * pi/180.
+
+> to find distance between 2 points
 
 def dist(original_pos, target_pos):
     """ Find distance from given original and target position.
     """
     vector = target_pos - original_pos
     return sqrt((vector.T * vector)[0])
+
+
 
 def calculate_123(R_EE, px, py, pz, roll, pitch, yaw):
     # Compensate for rotation discrepancy between DH parameters and Gazebo
